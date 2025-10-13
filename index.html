@@ -1,34 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natures Platter</title>
     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Fonts Style -->
-     <style>
-        .sora {
-  font-family: "Sora", sans-serif;
-  font-style: normal;
-}
-     </style>
-     <!-- Tailwind & DaisyUI CDN -->
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<!-- Tailwind Config -->
+    <style>
+      .sora {
+        font-family: "Sora", sans-serif;
+        font-style: normal;
+      }
+    </style>
+    <!-- Tailwind & DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Fontawsome CDN -->
+    <script
+      src="https://kit.fontawesome.com/ef45f973ec.js"
+      crossorigin="anonymous"
+    ></script>
 
-</head>
-<body class="sora">
+  </head>
+  <body class="sora">
+
     <!-- Header Section -->
-     <header></header>
+    <header>
+        <nav class=" flex justify-between items-center mx-4 md:justify-around md:items-center my-8 mb-20">
+            <!-- First -->
+            <div>
+                <img class="w-full" src="./c2-assets/logo-header.png" alt="logo image">
+                <!-- <h3>nature's platter</h3> -->
+            </div>
+             <!-- Hamberg Drawer -->
+             <div>
+                <div class="drawer drawer-end relative -right-20 md:hidden ">
+  <input id="my-drawer-5" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <!-- Page content here -->
+    <label for="my-drawer-5" class="drawer-button btn bg-white border-none w-full"><i class="fa-solid fa-bars text-4xl text-green-600 "></i></label>
+  </div>
+  <div class="drawer-side">
+    <label for="my-drawer-5" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu bg-base-200 min-h-full w-80 p-4">
+      <!-- Sidebar content here -->
+      <li><a href="">Product</a></li>
+      <li><a href="">Service</a></li>
+      <li><a href="">Contact us</a></li>
+      <li><a href="">Login</a></li>
+      <li><a href=""><button class="btn btn-success px-1">Register</button></a></li>
+    </ul>
+  </div>
+             </div>
+             </div>
+            <!-- Middle -->
+            <div  >
+                <ul class="md:flex justify-center gap-8 hidden">
+                    <li><a href=""></a>Product</li>
+                    <li><a href=""></a>Service</li>
+                    <li><a href=""></a>Contact us</li>
+                </ul>
+            </div>
+            <!-- Last -->
+            <div class="md:flex gap-6 items-center hidden">
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="w-7"><i class="fa-solid fa-cart-shopping max-w-full"></i></div>
+               <div class="flex gap-3 items-center">
+                 <button class="btn btn-outline btn-success text-[#0B0D17] text-base font-normal">Login</button>
+                <button class="btn btn-success">Register</button>
+               </div>
+            </div>
 
-     <!-- Main Section -->
-      <main></main>
+           
 
-      <!-- Footer Section -->
-       <footer></footer>
-</body>
+        </nav>
+
+        <!--  Hero Section -->
+          <section>
+            <div class="flex flex-col gap-9">
+                <!-- hero text -->
+                <div class="text-center max-w-4xl mx-auto"> 
+                    <h2 class="font-semibold text-6xl text-[#111111] leading-normal mb-8">Freshness <span class="text-[#179800]">You Can
+<br>Count</span> On, Prices You’ll Love!</h2>
+                 <p class="font-normal text-xl text-[#111111]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                </div>
+                <!--Hero image -->
+                <div>
+                    <img src="./c2-assets/hero-vegetables.png" alt="Hero vegitable">
+                </div>
+
+            </div>
+          </section>
+    </header>
+
+    <!-- Main Section -->
+    <main></main>
+
+    <!-- Footer Section -->
+    <footer></footer>
+  </body>
 </html>
