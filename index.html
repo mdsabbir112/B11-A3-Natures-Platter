@@ -328,44 +328,87 @@
           </section>
 
           <!-- Arrival and Offers -->
-           <section class="max-w-7xl mx-auto mb-36 pt-32 ">
+           <section class="max-w-7xl mx-auto md:mb-36 mb-0  pt-32 ">
             <div class="">   
                 <h2 class="font-semibold text-4xl text-[#179800] mb-12">Arival & Offers</h2>
             </div>
             <!-- Cards -->
-             <div class="grid grid-cols-[1.5fr_1fr]  gap-5">
+             <div class="grid grid-rows-1 md:grid-cols-[1.5fr_1fr] p-4 md:p-0 gap-5">
                   <!-- card-1 -->
-                <div class="flex justify-between bg-green-800 rounded-xl">
-                <div class="pt-12 pl-10">
+                <div class="flex justify-between items-center  bg-green-800 rounded-xl max-w-[780px] ">
+                <div class="md:pt-12 md:pl-10 pt-5 pl-6">
                     <div class="mb-7"><img src="./c2-assets/dawat-logo.png" alt="Dawat logo"></div>
-                    <button class="btn btn-success mb-7 text-xl font-normal text-[#ffffff] py-4 px-10">Cook Exotic Dishes</button>
-                    <h2 class="text-[#ffffff] text-4xl font-normal">UP to <span class="font-semibold">20% OFF</span></h2>
+                    <button class="btn btn-success mb-7 md:text-xl text-sm font-normal text-[#ffffff] md:py-4 md:px-10 w-auto">Cook Exotic Dishes</button>
+                    <h2 class="text-[#ffffff] md:text-4xl text-xl font-normal mb-3">UP to <span class="font-semibold">20% OFF</span></h2>
                 </div>
                 <!-- card-1-photo -->
                 <div>
-                    <div class="pt-8"><img src="./c2-assets/dawat-mock-up.png" alt="Dawat product"></div>
+                    <div class="md:pt-8 md:pb-4 h-auto "><img   src="./c2-assets/dawat-mock-up.png" alt="Dawat product"></div>
                 </div>
 
              </div>
 
              <!-- Card-2 -->
-               <div class="flex justify-between bg-[#102861] rounded-xl">
-                <div class="pt-5 pl-6">
-                    <div class="mb-7"><img src="./c2-assets/india-gate-logo.png" alt="india gate logo"></div>
-                    <button class="btn bg-[#2A4D97] border-none mb-7 text-xl font-normal text-[#ffffff] py-4 px-10">World’s No.1 Rice</button>
-                    <h2 class="text-[#ffffff] text-4xl font-normal ">UP to <span class="font-semibold">40% OFF</span></h2>
+               <div class="flex justify-between items-center bg-[#102861] rounded-xl max-w-[520px]">
+                <div class="pt-5 pl-6 ">
+                    <div class="mb-7"><img  src="./c2-assets/india-gate-logo.png" alt="india gate logo"></div>
+                    <button class="btn bg-[#2A4D97] border-none mb-7 text-base md:text-xl  font-normal text-[#ffffff] py-4 px-10">World’s No.1 Rice</button>
+                    <h2 class="text-[#ffffff] md:text-4xl text-xl font-normal mb-3 ">UP to <span class="font-semibold">40% OFF</span></h2>
                 </div>
                 <!-- card-2-photo -->
                 <div>
-                    <div class="pt-8 pb-2 pr-4"><img src="./c2-assets/india-gate-mock-up.png" alt="india gate product"></div>
+                    <div class="md:pt-8 md:pb-2 pt-2  pr-4  "><img  src="./c2-assets/india-gate-mock-up.png" alt="india gate product"></div>
                 </div>
 
              </div>
              </div>
            </section>
+
+           <!-- Grocery News -->
+<div class="md:relative max-w-7xl mx-auto mt-80">
+                <section class=" mb-3 pt-3 bg-[#EFEBE3] mx-4  rounded-2xl  md:absolute md:-bottom-56 relative -bottom-56" >
+                <div class="flex flex-col md:flex-row items-center md:gap-20 gap-10  ">
+                     <!--Image of busket  -->
+                    <div class="my-7 md:mx-24  mx-14"><img src="./c2-assets/vegetable-busket.png" alt="vegitable busket"></div>
+                    <!-- Content of the busket -->
+                     <div class="text-center md:text-left">
+                        <h2 class="mb-3 md:mb-5 md:mt-8 text-[#179800] md:text-[#111111] font-semibold text-4xl">Get Grocery News!</h2>
+                        <p class="md:mb-9 mb-5 font-normal text-lg text-[#111111]">Exclusive training tips, ticks, product deals and more.</p>
+                        <input class="rounded-lg text-[#c4c4c4] bg-white w-[300px]  md:w-[472px] border-none py-4 pl-4 mb-3 md:mb-9 font-normal text-base" type="email" name="" id="" placeholder="Enter email...." required><br>
+                        <button class="btn btn-success rounded-lg mb-10  bg-[#179800]">Subscribe</button>
+                     </div>
+                </div>
+            </section>
+</div>
     </main>
 
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="bg-[#179800]">
+        <div class="flex flex-col md:flex-row md:items-center mx-4 pt-72 pb-12 md:max-w-7xl md:mx-auto ">
+            <!-- first div -->
+             <div class="mb-9 flex-1">
+                <div><img src="./c2-assets/logo-footer.png" alt="logo Footer"></div>
+                <p class="text-white w-8/12 font-normal text-base mt-3">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+             </div>
+             <!-- secound div -->
+              <div class="mb-9 flex-1">
+                <ul class="text-white">
+                    <li>Product</li>
+                    <li class="my-5">Services</li>
+                    <li>Contact us</li>
+                </ul>
+              </div>
+              <!-- Third div -->
+               <div class="text-white font-normal text-sm">
+                <h4 class="mb-4">Follow Us</h4>
+                <div class="flex gap-7 flex-1">
+                    <i class="fa-brands fa-facebook text-xl"></i>
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+                    <i class="fa-brands fa-youtube text-xl"></i>
+                </div>
+               </div>
+        </div>
+    </footer>
   </body>
 </html>
